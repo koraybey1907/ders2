@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Diyetisyen Edanur Özcan</title>
+    <link rel="stylesheet" href="/static/anasayfa2.css">
+    
+</head>
+<body>
+
+<h1>
+    <table>
+        <tr>
+            <td width="80%">
+                <span>Diyetisyen Edanur Özcan</span>
+            </td>
+            <td>
+                <a href="https://www.instagram.com/dyt_edanur">
+                <img width="250" src="/static/instagram2.png">
+                </a>
+            </td>
+            <td>
+                <a href="https://api.whatsapp.com/send?phone=905417435950">
+                <img width="250" src="/static/whatsapp2.png">
+                </a>
+            </td>
+        </tr>   
+    </table>         
+</h1>
+
+
+<nav>
+	<a href="/anasayfa">Anasayfa</a>
+	<a href="/hakkimizda">Hakkımızda</a>
+	<a href="/ürünler">Ürünler</a>
+	<a href="/basarihikayeleri">Başarı Hikayaleri</a>
+	<a href="/iletisim">İletişim</a>
+	<a href="/anamnez">Anamnez Formu</a> 
+	<div class="animation start-home"></div>
+</nav>
+
+<table>
+
+
+    <tr>
+        <td width="60%">CAROUSEL</td> 
+        <td width="30%">
+            <h3> VUCÜT KİTLE ENDEKSİ HESAPLAMA </h3>
+            <div>
+                <form action="/hesapla" method="POST">
+                <p>
+                    Boy: <input type="text" id="boy" name="boy"> <br />
+                </p>
+                <p>
+                    Kilo: <input type="text" id="kilo" name="kilo"> <br />
+                </p>
+                <p>
+                    Cinsiyet: 
+                    <select>
+                    <option value="K">Kadın</option>
+                    <option value="E">Erkek</option>
+                    </select>
+                </p>
+                    <input type="submit" value="HESAPLA">
+                </form>
+            </div> 
+        </td>
+    </tr>
+
+</table>
+
+<div class="container">
+    <h2>Carousel Example</h2>  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="/myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="/1myCarousel" data-slide-to="1"></li>
+            <li data-target="/2myCarousel" data-slide-to="2"></li>
+        </ol>
+  
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="static/post 22.png" alt="Los Angeles" style="width:100%;">
+            </div>
+  
+            <div class="item">
+                <img src="static/post 17.png" alt="Chicago" style="width:100%;">
+            </div>
+      
+            <div class="item">
+                <img src="static/post 19.png" alt="New york" style="width:100%;">
+            </div>
+        </div>
+  
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
